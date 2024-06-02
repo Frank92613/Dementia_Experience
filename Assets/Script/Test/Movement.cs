@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float mouseSensitivity = 2f;
-    private float verticalRotation = 0f;
+    // private float verticalRotation = 0f;
 
     // Start is called before the first frame update
     void Start()

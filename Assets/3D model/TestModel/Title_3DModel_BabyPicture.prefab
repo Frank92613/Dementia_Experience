@@ -283,6 +283,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1176277723175289601}
+  - component: {fileID: 1514959323096926284}
+  - component: {fileID: 6397700006029551531}
   m_Layer: 0
   m_Name: Title_3DModel_BabyPicture
   m_TagString: Untagged
@@ -307,3 +309,30 @@ Transform:
   - {fileID: 1672000802414392256}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1514959323096926284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7854961097967797172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5348f082db05fb41bbe7ebad99d9f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6397700006029551531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7854961097967797172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c404b77cebb51854494c3267038df611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scale_X: 0.25
+  Scale_Y: 0.25
+  Scale_Z: 0.25

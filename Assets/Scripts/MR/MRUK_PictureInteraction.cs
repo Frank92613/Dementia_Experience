@@ -11,7 +11,7 @@ public class MRUK_Picture : MonoBehaviour
 {
     //抓取相關的功能物件
     public GameObject GrabFunctionObject;
-
+    public string MRUK_AnchorTag;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,7 +23,7 @@ public class MRUK_Picture : MonoBehaviour
 
 
             //判斷父項的標籤是否是"OTHER"
-            if (anchor != null && anchor.HasLabel("OTHER"))
+            if (anchor != null && anchor.HasLabel(MRUK_AnchorTag))
             {
 
                 //摧毀抓取功能物件
@@ -43,13 +43,13 @@ public class MRUK_Picture : MonoBehaviour
             }
             else
             {
-                Debug.Log("not OTHER");
+                Debug.Log("Not MRUK_AnchorTag's object");
             }
 
         }
         else
         {
-            Debug.Log("no parent");
+            Debug.Log("No parent");
         }
     }
 }

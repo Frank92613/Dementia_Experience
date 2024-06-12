@@ -111,7 +111,6 @@ public class MR_NarrationControl : MonoBehaviour
             {
 
                 GameObject Window = obj.transform.Find("windowFrame(PrefabSpawner Clone)").gameObject;
-                Animator anim = GetComponentInChildren<Animator>();
                 
 
 
@@ -119,6 +118,8 @@ public class MR_NarrationControl : MonoBehaviour
                 {
                     Debug.Log("window");
                     Window.SetActive(true);
+                    anim = Window.GetComponentInChildren<Animator>();
+                    
 
                 }
                 else
@@ -132,7 +133,7 @@ public class MR_NarrationControl : MonoBehaviour
 
     }
     public void Set_Window_Animation(){
-
+        
         anim.SetTrigger("Open");
     }
 
@@ -148,7 +149,7 @@ public class MR_NarrationControl : MonoBehaviour
             if (obj.name == "PLANT")
             {
 
-                GameObject Plant = obj.transform.Find(" Plant(PrefabSpawner Clone)").gameObject;
+                GameObject Plant = obj.transform.Find("MR_FlowerPot(PrefabSpawner Clone)").gameObject;
 
 
                 if (Plant != null)

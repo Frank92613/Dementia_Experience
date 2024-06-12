@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4572314, g: 0.2830665, b: 0.208476, a: 1}
+  m_IndirectSpecularColor: {r: 0.45605665, g: 0.28374317, b: 0.20877819, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -23493,18 +23493,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &4768107964689125100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5761861046714098450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5348f082db05fb41bbe7ebad99d9f19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!33 &4835853410499763925
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -24127,8 +24115,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5660332537674644192}
-  - component: {fileID: 9144130422947836236}
-  - component: {fileID: 4768107964689125100}
   m_Layer: 0
   m_Name: windowFrame
   m_TagString: Untagged
@@ -26143,24 +26129,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9144130422947836236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5761861046714098450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8432040f4967594ea023ab7b50ba03d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Scale_X: 0.6
-  Scale_Y: 0.45
-  Scale_Z: 0.5
-  Rotation_X: 90
-  Rotation_Y: 0
-  Rotation_Z: 0
 --- !u!33 &9194220363322343985
 MeshFilter:
   m_ObjectHideFlags: 0

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class MR_NarrationControl : MonoBehaviour
 {
-    
-
+    private Animator anim;
     public void FamilyPictureSetActive()
     {
         GameObject[] allObjects;
@@ -82,7 +81,6 @@ public class MR_NarrationControl : MonoBehaviour
 
                 GameObject WindowPicture = obj.transform.Find("Title_3DModel_WindowPicture(PrefabSpawner Clone)").gameObject;
 
-
                 if (WindowPicture != null)
                 {
                     Debug.Log("windowpicture");
@@ -113,6 +111,8 @@ public class MR_NarrationControl : MonoBehaviour
             {
 
                 GameObject Window = obj.transform.Find("windowFrame(PrefabSpawner Clone)").gameObject;
+                Animator anim = GetComponentInChildren<Animator>();
+                
 
 
                 if (Window != null)
@@ -131,7 +131,10 @@ public class MR_NarrationControl : MonoBehaviour
         }
 
     }
+    public void Set_Window_Animation(){
 
+        anim.SetTrigger("Open");
+    }
 
     public void PlantSetActive()
     {

@@ -105,7 +105,7 @@ public class Plant_Progress : MonoBehaviour
 
             // Spray Finish...
             Debug.Log("Finish!!");
-            Scene_Manager.Go_To_Scene_Async(1);
+            Scene_Manager.Go_To_Scene_Async(0);
         }
     }
 

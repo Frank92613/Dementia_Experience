@@ -7,7 +7,10 @@ public class SceneTransitionManager : MonoBehaviour
 {
     [SerializeField] private Fade_Screen fadeScreen;
     
-
+    void Start()
+    {
+        fadeScreen.FadeIn();
+    }
     // Normal Scene Change
     public void Go_To_Scene(int scene_index){
         StartCoroutine(Go_To_Scene_Routine(scene_index));

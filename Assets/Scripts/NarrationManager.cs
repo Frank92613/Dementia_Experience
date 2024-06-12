@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.Events;
 
 
-//�����W�����ɨ̷ӯ��ޭ�Ĳ�ounity�ƥ�A
 public class NarrationManager : MonoBehaviour
 {
     public AudioClip[] audioClips;
@@ -47,6 +46,7 @@ public class NarrationManager : MonoBehaviour
            
             if (currentClipIndex < events.Length && events[currentClipIndex] != null)
             {
+                Debug.Log(currentClipIndex);
                 events[currentClipIndex].Invoke();
             }
 

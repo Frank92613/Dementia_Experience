@@ -335,6 +335,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c404b77cebb51854494c3267038df611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Scale_X: 0.25
+  Scale_Y: 0.25
+  Scale_Z: 0.25
 --- !u!114 &3655683487470708193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,4 +350,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5348f082db05fb41bbe7ebad99d9f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PictureTrigger: 0

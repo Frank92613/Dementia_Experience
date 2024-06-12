@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Plant_Progress : MonoBehaviour
 {
     [SerializeField] private Slider progressBar;
+    public GameObject Tutorial;
     [SerializeField] private SceneTransitionManager Scene_Manager;
     [SerializeField] private Image[] Count_Success_Dots;
     [SerializeField] private RectTransform Fill_Area;

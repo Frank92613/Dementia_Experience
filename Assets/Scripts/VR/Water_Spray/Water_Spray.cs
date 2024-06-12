@@ -41,10 +41,14 @@ public class Water_Spray : MonoBehaviour, Oculus.Interaction.HandGrab.IHandGrabU
         public bool hitPlant = false;
         private float _dampedUseStrength = 0;
         private float _lastUseTime;
-               
+        
+        private Vector3 Original_Pos;
         [Tooltip("Press T")]public bool TestMode;
         #region input
-
+        void Start()
+        {
+            Original_Pos = transform.position;
+        }
         void Update()
         {
             RaycastHit hit;
@@ -60,6 +64,11 @@ public class Water_Spray : MonoBehaviour, Oculus.Interaction.HandGrab.IHandGrabU
                     hitPlant = false;
                 }
             }
+
+            if( transform.position != Original_Pos){
+                plantProgress.Tutorial.SetActive(false);
+            }
+
             // Test mode
             if(TestMode){
                 if(Input.GetKey(KeyCode.T)){

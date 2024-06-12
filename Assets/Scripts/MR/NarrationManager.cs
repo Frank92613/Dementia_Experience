@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 
-//·í­µÀW¼½§¹®É¨Ì·Ó¯Á¤Þ­ÈÄ²µounity¨Æ¥ó¡A
+//ï¿½ï¿½ï¿½ï¿½ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½É¨Ì·Ó¯ï¿½ï¿½Þ­ï¿½Ä²ï¿½ounityï¿½Æ¥ï¿½A
 public class NarrationManager : MonoBehaviour
 {
     public AudioClip[] audioClips;
@@ -39,6 +39,7 @@ public class NarrationManager : MonoBehaviour
         while (currentClipIndex < audioClips.Length)
         {
             audioSource.clip = audioClips[currentClipIndex];
+            yield return new WaitForSeconds(1);
             audioSource.Play();
 
             yield return new WaitForSeconds(audioSource.clip.length);

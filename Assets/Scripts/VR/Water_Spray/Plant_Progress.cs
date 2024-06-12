@@ -21,6 +21,7 @@ public class Plant_Progress : MonoBehaviour
     
     void Start()
     {
+        gameObject.SetActive(false);
         Total_PosX = progressBar.GetComponent<RectTransform>().rect.width; // Initialize the Total_PosX.
         Change_Level(); // Initialize level.
 

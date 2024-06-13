@@ -2738,8 +2738,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54cee26c519ad647b412430d28bc984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Window: {fileID: 3049729768821312363, guid: 14ea8ba50cdfacc4097e1fe4522c5d51, type: 3}
-  anim: {fileID: 0}
 --- !u!4 &321706066
 Transform:
   m_ObjectHideFlags: 0
@@ -5990,6 +5988,18 @@ MonoBehaviour:
       - m_Target: {fileID: 594225463}
         m_TargetAssemblyTypeName: MR_NarrationControl, Assembly-CSharp
         m_MethodName: WindowSetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 594225463}
+        m_TargetAssemblyTypeName: MR_NarrationControl, Assembly-CSharp
+        m_MethodName: PlantSetActive
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9394,6 +9404,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fade_Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2665817346587167944, guid: 1b70d647faf9ae04e97a67ca3398b65c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14999,6 +15014,15 @@ MonoBehaviour:
     Scaling: 3
     Alignment: 2
     IgnorePrefabSize: 0
+  - Labels: 4096
+    Prefabs:
+    - {fileID: 4517267656937434081, guid: 998e3b57d88721747b21e60375e7492a, type: 3}
+    PrefabSelection: 1
+    MatchAspectRatio: 1
+    CalculateFacingDirection: 0
+    Scaling: 3
+    Alignment: 2
+    IgnorePrefabSize: 0
   SeedValue: 0
   onPrefabSpawned:
     m_PersistentCalls:
@@ -20295,7 +20319,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 1
+  m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
